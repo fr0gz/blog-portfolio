@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "head.html" %}
+{% include "header.html" %}
+<body>
+
+  <!-- Start your project here-->
+  <main>
+    <div class="container-fluid mt-5 pt-5"> 
+    {% include "proyectos.html" %}
+    </div>
+  
+  
+  <!-- /Start your project here-->
+<div class="container">
+  {% include "about.html" %}
+<hr class="between-sections">
+  {% include "contact.html" %}
+</div>
+{% include "scripts.html" %}
+  </main>
+  <div class="dotted-scrollspy clearfix d-none d-sm-block">
+    <ul class="nav smooth-scroll flex-column">
+      <li class="nav-item"><a class="nav-link" href="#proyectos"><span></span></a></li>      
+      <li class="nav-item"><a class="nav-link" href="#about"><span></span></a></li>
+      <li class="nav-item"><a class="nav-link" href="#contacto"><span></span></a></li>
+    </ul>
+  </div>
+{% include "footer.html" %}  
+</body>
+
+</html>

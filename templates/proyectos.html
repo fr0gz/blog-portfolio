@@ -1,0 +1,30 @@
+<section class="section" id="proyectos">
+
+    <h1 class="section-heading text-center mt-4 black-text wow fadeIn" data-wow-delay="0.2s">Proyectos</h1>
+   
+    <div class="row wow FadeIn" data-wow-delay="0.4s">
+        <div class="col-md-12">
+            <div id="mdb-lightbox-ui">
+                <div class="mdb-lightbox">
+                    {% for img in images %}
+                    <figure class="col-md-4">
+                        <div class="card m-5" style="width: 22rem;">
+
+                            <img src="{{img.image.url}}" alt="{{img.alt}}"
+                            style="min-height:300px;
+                            max-height:300px;
+                            min-width:400px
+                            max-width:400px";
+                            
+                            >
+                        </div>
+                   </figure>
+                   {% endfor %}                                      
+                </div>                
+            </div>                     
+        </div>
+
+    </div>
+    
+
+</section>
